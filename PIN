@@ -1,0 +1,17 @@
+#!/bin/bash
+
+read -s -p "Introduce tu PIN: " pin1
+
+echo -e "\nVariable 1 Almacenada."
+
+read -s -p "Vuelve a introducir el PIN: " pin2
+
+echo -e "\nVariable 2 Alamcenada."
+
+if [ $pin1 -eq $pin2 ]; then
+        echo "El PIN coincide."
+else
+        echo "El PIN no coincide."
+fi
+
+echo "Gracias por usar el programa!"
