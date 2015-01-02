@@ -1,0 +1,15 @@
+#!/bin/bash
+
+hora1=`date +%k` #Obtener hora en formato 24hrs
+hora2=`date +%l` #Obtenemos hora en formato 12hrs
+
+if [ $hora1 -eq 12 ]; then
+        dia="del mediodia"
+elif [ $hora1 -gt 12 ]; then
+        dia="de la tarde"
+else
+        dia="de la manana"
+fi
+
+echo "Son las $hora2 $dia"
+echo "$hora2"
