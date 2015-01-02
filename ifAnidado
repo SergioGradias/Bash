@@ -1,0 +1,27 @@
+#!/bin/bash
+
+clear
+
+echo "Introcude tu nombre: "
+read nombre
+
+echo "Introduce tu apellido: "
+read apellido
+
+echo "Hola $nombre $apellido"
+
+echo "Elige un numero del 1 al 10: "
+read num
+
+if [ -z $num ]; then
+        echo "No has introducido ningun numero"
+        echo "Saliendo..."
+        exit 0
+else
+        if [[ $num -gt 10 || $num -lt 1 ]]; then
+                echo "El numero eligido ($num) no es valido."
+                echo "El rango es entre 1 y 10."
+        else
+                echo "El numero que has elegido es el: "$num
+        fi
+fi
