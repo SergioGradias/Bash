@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo "Cual es tu nombre? "
+read nombre
+
+echo -e "Entonces tu nombre es \e[0;35m$nombre\e[0m"
+
+echo "Ahora pondremos un poco de color al asunto"
+
+echo -e "Esto es \e[1;31mrojo claro\e[0m y esto es \e[1;34mazul claro\e[0m"
+
+echo -e "\e[0;34mColorear puede ser\e[0m \e[0;32mun poco lento y\e[0m \e[0;31mfrustrante\e[0m"
+
+echo ""
+echo "Y Esta Goolge"
+echo -e "Así se escribe \e[1;34mG\e[0m\e[1;31mo\e[0m\e[1;33mo\e[0m\e[1;34mg\e[0m\e[1;32ml\e[0m\e[1;31me\e[0m"
+
+echo "Y Mareador el codigo para hacer eso"
