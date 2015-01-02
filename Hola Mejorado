@@ -1,0 +1,25 @@
+#!/bin/bash
+
+saludo="Hola Mundo"
+despedida="Adios Mundo"
+
+function salida {
+        local despedida="Gracias por usar nuestro programa"
+        echo $despedida
+}
+
+echo $saludo "Y" $despedida
+
+num1=6
+num2=2
+
+echo "El primer numero es: " $num1
+echo "El segundo numero es: " $num2
+
+let total=$num1+$num2
+echo "La suma de lo numeros es: " $total
+
+let total=$num1-$num2
+echo "La resta de los numeros es: " $total
+
+salida
