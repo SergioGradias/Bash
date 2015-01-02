@@ -1,5 +1,6 @@
 #!/bin/bash
 
+#Introduccion de PIN
 read -s -p "Introduce tu PIN: " pin1
 
 echo -e "\nVariable 1 Almacenada."
@@ -14,4 +15,19 @@ else
         echo "El PIN no coincide."
 fi
 
+#Introduccion de Password
+
+read -s -p "Introduce password: " pass1
+
+read -s -p "Verifica password: " pass2
+
+if [ $pass1 == $pass2 ]; then
+        echo "El password coincide!"
+else
+        echo "No coincide el password!, bruto!!"
+fi
+
+#Finaliza el programa
+
 echo "Gracias por usar el programa!"
+
