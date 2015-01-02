@@ -1,0 +1,41 @@
+#!/bin/bash
+
+echo "Ejemplo de estructuras SELECT y CASE"
+
+echo "Selecciona una acción:"
+
+select ACCION in Empezar Repetir Acabar
+
+do
+
+       case $ACCION in
+
+       "Empezar")
+
+             echo "El usuario quiere empezar."
+
+       ;;
+
+       "Repetir")
+
+             echo "El usuario quiere repetir."
+
+       ;;
+
+       "Acabar")
+
+             echo "El usuario quiere salir."
+
+             break
+
+       ;;    
+
+       *)
+
+             echo "No sabemos lo que quiere el usuario."
+
+       ;;
+
+       esac
+
+ done
